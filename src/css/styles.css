@@ -1,3 +1,19 @@
 /* Nombre completo: Juan José Arenas Gaviria
 Clan: Dell
 Fecha: 09/04/24 */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --azul_oscuro: #181E4B;
+    --azul_claro: #6b5cff;
+    --blanco: #F9FAFC;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
