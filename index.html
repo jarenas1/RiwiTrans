@@ -30,7 +30,7 @@ Fecha: 09/04/24 -->
         </section>
 
         <nav class="nav">
-            <a href=""><i class="bi bi-textarea-resize"></i> Requisitos</a>
+            <a href=""><i class="bi bi-card-checklist"></i> Requisitos</a>
             <a href=""><i class="bi bi-geo-fill"></i> Acerca De Nosotros</a>
             <a href=""> <i class="bi bi-envelope-fill"></i> Contactanos</a>
             <a href=""><i class="bi bi-telephone-fill"></i> Llamanos</a>
@@ -40,17 +40,18 @@ Fecha: 09/04/24 -->
     </header>
 
     <main>
-        <section class="cont1">
+        <section class="cont">
             <article class="septext">
-                <h2>Transporte desde cualquier lugar hacia tu centro de entrenamiento.</h2>
+                <h3>Transporte desde cualquier lugar hacia tu centro de entrenamiento.</h3>
                 <form class="form" action="sql.com">
-                    <input type="text" placeholder="   Ingresa tu ubicacion">
-                    <select  name="sede" id="sede">
-                    <option value="Medellin">Medellin</option>
-                    <option value="Barranquilla">Barranquilla</option>
-                    <option value="Cali">Cali</option>
-                    <option value="Bucaramanga">Bucaramanga</option>
-                </select>
+                    <input type="text" placeholder="   Ingresa tu ubicacion" required>
+                    <input list="city" placeholder="Selecciona tu centro de formacion" required>
+                    <datalist id="city" name="city">
+                        <option value="Medellin">Medellin</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Bucaramanga">Bucaramanga</option>
+                    </datalist>
                 <button type="submit"><i class="bi bi-send-fill"></i> Solicitar vehiculo</button>
                 </form>
             </article>
@@ -60,9 +61,126 @@ Fecha: 09/04/24 -->
             </article>
         </section>
 
-        <section>
-            <article></article>
-            <article></article>
+        <section class="cont">
+            <article class="sepi">
+                <img src="./public/img/conductora.webp" alt="Conductora">
+            </article>
+            <article class="septexti">
+                <h3>Registrate cuando quieras y genera las ganancias que necesitas</h3>
+                <p>¡Únte hoy y abre las puertas a tus oportunidades financieras!</p>
+            </article>
+        </section>
+
+        <section class="cont">
+            <article class="septable">
+                <h3>Viaja con amigos</h3>
+                <p>¡Viaja con amigos y crea recuerdos inolvidables!</p>
+                <p>Observa la lista de vehiculos disponibles en cada una de nuestras sedes</p>
+
+                <table>
+                    <tr>
+                        <th><i class="bi bi-bank2"></i> Sede</th>
+                        <th><i class="bi bi-car-front-fill"></i> Vehiculos</th>
+                        <th><i class="bi bi-bicycle"></i> Motos</th>
+                    </tr>
+                
+                    <tr>
+                        <td>Riwi Medellin</td>
+                        <td>15</td>
+                        <td>40</td>
+                    </tr>
+
+                    <tr>
+                        <td>Riwi Bucaramanga</td>
+                        <td>10</td>
+                        <td>30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Riwi Barranquilla</td>
+                        <td>20</td>
+                        <td>180</td>
+                    </tr>
+
+                    <tr>
+                        <td>Riwi Cali</td>
+                        <td>8</td>
+                        <td>200</td>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="sep">
+                <img src="./public/img/motociclistas.webp" alt="Motociclistas">
+            </article>
+        </section>
+
+        <section class="inferior">
+            <article><h3>¿Qué necesito para ser un conductor riwi?</h3></article>
+            <article><img src="/public/img/conductores.webp" alt=""></article>
+        </section>
+
+        <section class="requisitos">
+            <article class="requi">
+                <i class="bi bi-star-fill"></i>
+                <h4>Requisitos</h4>
+                <p>Ser mayor de 18 años</p>
+                <p>Verificación de antecedentes</p>
+                <p>ser coder riwi</p>
+            </article>
+            <article class="requi">
+                <i class="bi bi-star-fill"></i>
+                <h4>Requisitos</h4>
+                <p>Ser mayor de 18 años</p>
+                <p>Verificación de antecedentes</p>
+                <p>ser coder riwi</p>
+            </article>
+            <article class="requi"><i class="bi bi-star-fill"></i>
+                <h4>Requisitos</h4>
+                <p>Ser mayor de 18 años</p>
+                <p>Verificación de antecedentes</p>
+                <p>ser coder riwi</p></article>
+        </section>
+
+        <section class="cajaform">
+            <h4>Registrate cuando quieras</h4>
+            <form class="formu" action="sql.com">
+                <input type="text"  placeholder="  Ingresa tu nombre" required id="name" >
+
+                <input type="email" name="mail" id="mail" placeholder="  Ingresa tu correo" required>
+
+                <input type="number" name="tel" id="tel" placeholder="  Ingrese su numero de telefono" required>
+
+                <input list="city" placeholder="  Selecciona tu centro de formacion" required>
+                    <datalist id="city" name="city">
+                        <option value="Medellin">Medellin</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Bucaramanga">Bucaramanga</option>
+                    </datalist>
+
+                    <input list="user" placeholder="  Selecciona tu perfil" required>
+                    <datalist id="user" name="user">
+                        <option value="Conductor">Conductor</option>
+                        <option value="Usuario">Usuario</option>
+                    </datalist>
+
+                    <textarea name="" id="" cols="125" rows="13" placeholder="  Comentarios"></textarea>
+                <button type="submit">Registrarte</button>
+            </form>
+        </section>
+
+        
+            <h4 class="sn">Acerca de nostros</h4>
+            <section class="contvid">
+            <article class="video">
+                <h5>¿Quienes somos?</h5>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7CFyOSd-m3o?si=0l-4pZ03syph8fol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+            <article class="video">
+                <h5>¿Donde estamos ubicados?</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3378581271454!2d-75.58361490000001!3d6.219101000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi%20-%20Be%20a%20Coder!5e0!3m2!1ses-419!2sco!4v1712676487221!5m2!1ses-419!2sco" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
         </section>
     </main>
 
