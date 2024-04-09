@@ -17,20 +17,57 @@ Fecha: 09/04/24 -->
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="15days">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <section class="logo">
+            <img src="./public/img/menor.webp" alt="">
+            <h1><span>T</span>rans<span>R</span>iwi</h1>
+           <img src="./public/img/mayor.webp" alt="">
+        </section>
 
+        <nav class="nav">
+            <a href=""><i class="bi bi-textarea-resize"></i> Requisitos</a>
+            <a href=""><i class="bi bi-geo-fill"></i> Acerca De Nosotros</a>
+            <a href=""> <i class="bi bi-envelope-fill"></i> Contactanos</a>
+            <a href=""><i class="bi bi-telephone-fill"></i> Llamanos</a>
+            <button type="button"><a href="">Iniciar sesion</a></button>
+            <button type="button"><a href="">Registrarse</a></button>
+        </nav>
     </header>
 
     <main>
+        <section class="cont1">
+            <article class="septext">
+                <h2>Transporte desde cualquier lugar hacia tu centro de entrenamiento.</h2>
+                <form class="form" action="sql.com">
+                    <input type="text" placeholder="   Ingresa tu ubicacion">
+                    <select  name="sede" id="sede">
+                    <option value="Medellin">Medellin</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                </select>
+                <button type="submit"><i class="bi bi-send-fill"></i> Solicitar vehiculo</button>
+                </form>
+            </article>
 
+            <article class="sep">
+                <img src="./public/img/cuatro_pasajeros.webp" alt="">
+            </article>
+        </section>
+
+        <section>
+            <article></article>
+            <article></article>
+        </section>
     </main>
 
     <footer>
-        
+
     </footer>
 </body>
 </html>
